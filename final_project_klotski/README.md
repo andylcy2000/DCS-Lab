@@ -1,6 +1,6 @@
 # DCS Lab Final Project
 
-In this final project, our team use FPGA combined with TRDB-D5M camera, stepper motor, electromagnet to implement an automatic [klotski](https://www.youtube.com/watch?v=IIvCUGJCQRI) solver.
+In this final project, our team use DE2-115, a FPGA board, combined with TRDB-D5M camera, stepper motor, electromagnet to implement an automatic [klotski](https://www.youtube.com/watch?v=IIvCUGJCQRI) solver.
 
 The whole view of our product:
 ![automatic klotski solver](whole.jpg)
