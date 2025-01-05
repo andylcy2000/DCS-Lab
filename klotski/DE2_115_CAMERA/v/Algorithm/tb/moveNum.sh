@@ -1,0 +1,1 @@
+vcs -R -full64 -f moveNum.f | tee moveNum.log

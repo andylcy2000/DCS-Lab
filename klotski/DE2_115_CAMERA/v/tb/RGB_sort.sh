@@ -1,0 +1,1 @@
+vcs -R -full64 -f RGB_sort.f | tee RGB_sort.log

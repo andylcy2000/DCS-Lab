@@ -1,0 +1,1 @@
+vcs -R -full64 -f solver.f | tee solver.log
