@@ -1,0 +1,96 @@
+
+State Machine - |DE2_115_CAMERA|Block_Movement2Motor:bm2m|state_r
+Name state_r.S_HALT_MOVE state_r.S_HALT_CALIBRATE state_r.S_CALIBRATE state_r.S_RETURN_TO_END_BLOCK state_r.S_MOVE_BLOCK state_r.S_MOVE_TO_START_BLOCK state_r.S_CALC_XY_MOVEMENT state_r.S_IDLE state_r.S_DONE 
+state_r.S_IDLE 0 0 0 0 0 0 0 0 0 
+state_r.S_CALC_XY_MOVEMENT 0 0 0 0 0 0 1 1 0 
+state_r.S_MOVE_TO_START_BLOCK 0 0 0 0 0 1 0 1 0 
+state_r.S_MOVE_BLOCK 0 0 0 0 1 0 0 1 0 
+state_r.S_RETURN_TO_END_BLOCK 0 0 0 1 0 0 0 1 0 
+state_r.S_CALIBRATE 0 0 1 0 0 0 0 1 0 
+state_r.S_HALT_CALIBRATE 0 1 0 0 0 0 0 1 0 
+state_r.S_HALT_MOVE 1 0 0 0 0 0 0 1 0 
+state_r.S_DONE 0 0 0 0 0 0 0 1 1 
+
+State Machine - |DE2_115_CAMERA|Block_Movement2Motor:bm2m|Motor_Control:y_motor|state_r
+Name state_r.S_DONE state_r.S_ROTATE_LOW state_r.S_ROTATE_HIGH state_r.S_IDLE 
+state_r.S_IDLE 0 0 0 0 
+state_r.S_ROTATE_HIGH 0 0 1 1 
+state_r.S_ROTATE_LOW 0 1 0 1 
+state_r.S_DONE 1 0 0 1 
+
+State Machine - |DE2_115_CAMERA|Block_Movement2Motor:bm2m|Motor_Control:x_motor|state_r
+Name state_r.S_DONE state_r.S_ROTATE_LOW state_r.S_ROTATE_HIGH state_r.S_IDLE 
+state_r.S_IDLE 0 0 0 0 
+state_r.S_ROTATE_HIGH 0 0 1 1 
+state_r.S_ROTATE_LOW 0 1 0 1 
+state_r.S_DONE 1 0 0 1 
+
+State Machine - |DE2_115_CAMERA|Solver:solver|state_r
+Name state_r.S_FINISH state_r.S5 state_r.S4_5 state_r.S4_4 state_r.S4_3 state_r.S4_2 state_r.S4_1 state_r.S3_5 state_r.S3_4 state_r.S3_3 state_r.S3_2 state_r.S3_1 state_r.S2_7 state_r.S2_6 state_r.S2_5 state_r.S2_4 state_r.S2_3 state_r.S2_2 state_r.S2_1 state_r.S1_7 state_r.S1_6 state_r.S1_5 state_r.S1_4 state_r.S1_3 state_r.S1_2 state_r.S1_1 state_r.S_IDLE 
+state_r.S_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state_r.S1_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state_r.S1_2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state_r.S1_3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state_r.S1_4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state_r.S1_5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state_r.S1_6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state_r.S1_7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state_r.S2_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state_r.S2_2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state_r.S2_3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state_r.S2_4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S2_5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S2_6 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S2_7 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S3_1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S3_2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S3_3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S3_4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S3_5 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S4_1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S4_2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S4_3 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S4_4 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S4_5 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S5 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.S_FINISH 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |DE2_115_CAMERA|Solver:solver|MoveNum:moveNum|state_r
+Name state_r.S_ZERO_2 state_r.S_ZERO_1 state_r.S_FIND state_r.S_IDLE state_r.S_WAIT 
+state_r.S_IDLE 0 0 0 0 0 
+state_r.S_FIND 0 0 1 1 0 
+state_r.S_ZERO_1 0 1 0 1 0 
+state_r.S_ZERO_2 1 0 0 1 0 
+state_r.S_WAIT 0 0 0 1 1 
+
+State Machine - |DE2_115_CAMERA|Solver:solver|MoveNum:moveNum|MoveZero:moveZero|state_r
+Name state_r.S_FINISH state_r.S_MOVE state_r.S_WAIT_MOTOR state_r.S_DIR state_r.S_CHECK_FINISH state_r.S_IDLE 
+state_r.S_IDLE 0 0 0 0 0 0 
+state_r.S_CHECK_FINISH 0 0 0 0 1 1 
+state_r.S_DIR 0 0 0 1 0 1 
+state_r.S_WAIT_MOTOR 0 0 1 0 0 1 
+state_r.S_MOVE 0 1 0 0 0 1 
+state_r.S_FINISH 1 0 0 0 0 1 
+
+State Machine - |DE2_115_CAMERA|Top_Control:top_control|state_r
+Name state_r.S_MOTOR state_r.S_ALGO state_r.S_VGA state_r.S_IDLE state_r.S_DONE 
+state_r.S_IDLE 0 0 0 0 0 
+state_r.S_VGA 0 0 1 1 0 
+state_r.S_ALGO 0 1 0 1 0 
+state_r.S_MOTOR 1 0 0 1 0 
+state_r.S_DONE 0 0 0 1 1 
+
+State Machine - |DE2_115_CAMERA|Read_VGA_Grey:read_vga|state_r
+Name state_r.S_DONE state_r.S_DECODE state_r.S_AVG state_r.S_RECEIVE state_r.S_WAIT_V_CONT_0 state_r.S_IDLE 
+state_r.S_IDLE 0 0 0 0 0 0 
+state_r.S_WAIT_V_CONT_0 0 0 0 0 1 1 
+state_r.S_RECEIVE 0 0 0 1 0 1 
+state_r.S_AVG 0 0 1 0 0 1 
+state_r.S_DECODE 0 1 0 0 0 1 
+state_r.S_DONE 1 0 0 0 0 1 
+
+State Machine - |DE2_115_CAMERA|I2C_CCD_Config:u8|mSetup_ST
+Name mSetup_ST.0000 mSetup_ST.0010 mSetup_ST.0001 
+mSetup_ST.0000 0 0 0 
+mSetup_ST.0001 1 0 1 
+mSetup_ST.0010 1 1 0 
