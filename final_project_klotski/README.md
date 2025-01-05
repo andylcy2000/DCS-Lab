@@ -7,7 +7,7 @@ The whole view of our product:
 
 ### Demo
 
-![The Demo can be found here.](https://youtu.be/J9KuMys705g)
+[The Demo can be found here.](https://youtu.be/J9KuMys705g)
 
 ### Time Flow
 
@@ -21,9 +21,11 @@ The whole view of our product:
 
 5. Move the physical klotski blocks.
 
-6. Check if the block is moved correctly; otherwise, redo the moving procedure.
+6. Live movement and a hint of direction will be showned on the screen using VGA.
 
-7. Repeat 1. ~ 6. til the whole puzzle is solved.
+7. Check if the block is moved correctly; otherwise, redo the moving procedure.
+
+8. Repeat 1. ~ 6. til the whole puzzle is solved.
 
 ![Time flow](time_flow.jpg)
 
